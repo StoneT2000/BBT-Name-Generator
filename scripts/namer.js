@@ -6,6 +6,7 @@ $(document).ready(function () {
 });
 
 function generate_name(){
+  /*
   var final_name = '';
   var i1 = Math.round(Math.random() * (articles.length - 1))
   var i2 = Math.round(Math.random() * (prename.length - 1))
@@ -27,12 +28,28 @@ function generate_name(){
   if (Math.random() > 0.5) {
     final_name += technical2[i5] + ' ';
   }
-  
+  */
+  var final_name = 'The ';
+  //var i0 = Math.round(Math.random() * (adjectives.length - 1));
+  var i1 = Math.round(Math.random() * (nouns.length - 1));
+  var i2 = Math.round(Math.random() * (terms.length - 1));
+  final_name += nouns[i1]+ ' ';
+  final_name += terms[i2] + ' ';
   return final_name;
 }
 
+//Overall structure of a Big Bang Theory Name
+//The + [Adjective] + [Sciency Noun or Food] + [Some Scientific Term/Noun]
+
+//var adjectives = ['']
+
+var nouns = ['Russian Rocket', 'Egg Salad', 'Yale-鸭力', 'Ham Sandwich', 'Chicken McNugget', 'Club Turkey', 'Yellow Hat', 'Isolation', 'Wiggly Finger', 'Chi-Squared', 'Tiny Dragon',
+             'Bono', 'Raiders', 'Hofstadter', 'Sheldon', 'Penny', 'Hawking']
+
+var terms = ['Initiation', 'Equivalency', 'Equivalence Relation', 'Equivalence Solution', 'Solution', 'Test', 'Maneuver', 'Acquisition', 'Formulation', 'Contraction', 'Expansion', 'Factor', 'Reccurence', 'Diffusion', 'Disintegration', 'Transformation', 'Vortex', 'Malfunction', 'Coefficient', 'Convergence', 'Divergence', 'Limit', 'Excitation', 'Acceleration', 'Attraction', 'Repulsion', 'Pulse', 'Proximity Test', 'Resonance', 'Minimization']
 
 
+/*
 var prename = ['Colloquial', 'Insignificant', 'Significant']
 var adjectives = ['Long', 'Short', 'Colloquial', 'Insignificant', 'Significant', 'Overdone']
 var names = ['Egg Salad', 'Yale-鸭力', 'Ham Sandwich', 'Chicken McNugget', 'Club Turkey', 'Yellow Hat', '']
@@ -45,3 +62,4 @@ var prename_A = ['Introduction to the']
 //Depending on article is a relevant pre_name, names list.
 var articles = [{'article': 'The', 'prename':prename,'names': names}, 
                 {'article': 'A', 'prename': prename_A,'names':names}]
+*/
