@@ -12,11 +12,41 @@ body {
   -webkit-transform: translate(0,-50%);
   -ms-transform: translate(0,-50%);
   transform: translate(0,-50%);
+  background-color:white;
 }
 #name {
   font-size:50px;
+  display: block;
+  background-color: white;
 }
-
+#play_game_wrapper {
+  width: 300px;
+  position: absolute;
+  height:20px;
+  left:20px;
+  top:10px;
+  background-color:white;
+}
+#score {
+  width: 100px;
+  position: absolute;
+  height:20px;
+  left:20px;
+  top:10px;
+  text-align: center;
+  z-index: -1;
+  transition: transform 0.3s;
+  
+}
+#decision {
+  margin-top:20px;
+  display: block;
+  position: absolute;
+  width: 100%;
+  transform: translateY(-60px);
+  z-index:-1;
+  transition: transform 0.4s;
+}
 @media only screen and (max-width:610px){
   #name {
     font-size:30px;
