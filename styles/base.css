@@ -9,6 +9,7 @@ body{
   text-align: center;
   /*Set height to 100% if content is less than screen size. otherwise, container-fluid will extend its height to accomadate the content size*/
   height:100%;
+  padding:0px;
 }
 .header{
   z-index:1000;
