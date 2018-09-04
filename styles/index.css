@@ -1,0 +1,13 @@
+body {
+
+}
+#name_wrapper {
+  position: absolute;
+  top:50%;
+  width: 80%;
+  margin-left:10%;
+  height:100px;
+  margin-top:-50px;
+}
+#name {
+}
