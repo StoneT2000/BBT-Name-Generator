@@ -31,22 +31,40 @@ function generate_name(){
   */
   var final_name = 'The ';
   //var i0 = Math.round(Math.random() * (adjectives.length - 1));
-  var i1 = Math.round(Math.random() * (nouns.length - 1));
   var i2 = Math.round(Math.random() * (terms.length - 1));
-  final_name += nouns[i1]+ ' ';
+  if (Math.random() > 0.2 ){
+    var i1 = Math.round(Math.random() * (nouns.length - 1));
+    final_name += nouns[i1]+ ' ';
+  }
+  else {
+    var i1 = Math.round(Math.random() * (lastnames.length - 1));
+    final_name += lastnames[i1];
+    if (Math.random() > 0.5) {
+      final_name += '/';
+    }
+    else {
+      final_name += '-';
+    }
+    var i2 = Math.round(Math.random() * (lastnames.length - 1));
+    while (i2 == i1) {
+      i2 = Math.round(Math.random() * (lastnames.length - 1));
+    }
+     final_name += lastnames[i2] + ' ';
+  }
+  
   final_name += terms[i2] + ' ';
   return final_name;
 }
 
 //Overall structure of a Big Bang Theory Name
 //The + [Adjective] + [Sciency Noun or Food] + [Some Scientific Term/Noun]
-
+//The + [Adjective] + [Last Names combo] + [Sciency Noun or Food] + [Term]
 //var adjectives = ['']
 
-var nouns = ['Russian Rocket', 'Egg Salad', 'Yale-鸭力', 'Ham Sandwich', 'Chicken McNugget', 'Club Turkey', 'Yellow Hat', 'Isolation', 'Wiggly Finger', 'Chi-Squared', 'Tiny Dragon',
-             'Bono', 'Raiders', 'Hofstadter', 'Sheldon', 'Penny', 'Hawking']
-
-var terms = ['Initiation', 'Equivalency', 'Equivalence Relation', 'Equivalence Solution', 'Solution', 'Test', 'Maneuver', 'Acquisition', 'Formulation', 'Contraction', 'Expansion', 'Factor', 'Reccurence', 'Diffusion', 'Disintegration', 'Transformation', 'Vortex', 'Malfunction', 'Coefficient', 'Convergence', 'Divergence', 'Limit', 'Excitation', 'Acceleration', 'Attraction', 'Repulsion', 'Pulse', 'Proximity Test', 'Resonance', 'Minimization']
+var nouns = ['Russian Rocket', 'Egg Salad', 'Yale-鸭力', 'Ham Sandwich', 'Chicken McNugget', 'Club Turkey', 'Yellow Hat', 'Isolation', 'Wiggly Finger', 'Chi-Squared', 'Unicorn', 'Holographic', 'Extract', 'Fish Guts', 'Bakersfield', 'Orange Juice', 'Scavenger', 'Colonization', 'Probabilistic', 'Gyroscopic', 'Cognition', 'Collaboration', 'Geology', 'Conjugate', 'Paradise', 'Comic Book', 'Comic Book Store', 'Public Restroom',
+             'Bono', 'Raiders', 'Leonard', 'Sheldon', 'Penny', 'Hawking', 'Amy', 'Howard', 'Bernadette', 'Stuart', 'Spock']
+var lastnames = ['Hofstadter', 'Wolowitz', 'Koothrappali', 'Cooper', 'Fowler']
+var terms = ['Initiation', 'Equivalency', 'Equivalence Relation', 'Equivalence Solution', 'Solution', 'Test', 'Maneuver', 'Acquisition', 'Formulation', 'Contraction', 'Expansion', 'Factor', 'Reccurence', 'Diffusion', 'Disintegration', 'Transformation', 'Vortex', 'Malfunction', 'Coefficient', 'Convergence', 'Divergence', 'Limit', 'Excitation', 'Acceleration', 'Attraction', 'Repulsion', 'Pulse', 'Proximity Test', 'Resonance', 'Minimization', 'Insufficiency', 'Thermalization', 'Detoriation', 'Transmission', 'Incursion', 'Combustion', 'Estimation', 'Optimization', 'Sublimation', 'Reverberation', 'Permutation', 'Materialization', 'Submergence', 'Exfoliation', 'Oscillation', 'Fluctuation', 'Application', 'Synthesis', 'Hysteresis', 'Path', 'Chromatic Number', 'Summation', 'Deviation', 'Automation', 'Evaporation', 'Condensation', 'Asymmetry', 'Conundrum', 'Agitation', 'Regulation', 'Dissonance', 'Harmony', 'Initiative', '']
 
 
 /*
