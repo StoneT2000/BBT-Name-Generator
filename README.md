@@ -13,3 +13,15 @@ It works by following the general format of a Big Bang Theory episode name, whic
 "[Some grouping of names or random 1,2 word summary of the episode or just something realllly random]"
 
 "[Some convoluted scientific term]"
+
+And the website randomly slaps together a group of fitting terms into those brackets.
+
+Example:
+
+"The [Table] [Polarization]"
+
+"The [Banana] [Postulate]"
+
+"The [Status Quo] [Combustion]"
+
+2 of 3 of which are actual episode names and one is a randomly generated one.
