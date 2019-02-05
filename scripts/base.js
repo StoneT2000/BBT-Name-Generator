@@ -5,6 +5,6 @@ $(document).ready(function () {
     }
   );
   $('.footer').mouseleave(function() {
-      $('.footer').css('transform','translateY(30px)');
+      $('.footer').css('transform','translateY(60px)');
     });
 });

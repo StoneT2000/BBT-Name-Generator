@@ -58,9 +58,9 @@ button:focus {outline:0;}
   z-index:9999;
   color:rgb(52,58,64);
   display: block;
-  -webkit-transform: translateY(30px);
-  -ms-transform: translateY(30px);
-  transform: translateY(30px);
+  -webkit-transform: translateY(60px);
+  -ms-transform: translateY(60px);
+  transform: translateY(60px);
   -webkit-transition: -webkit-transform 0.4s;
   transition: -webkit-transform 0.4s;
   -o-transition: transform 0.4s;
@@ -72,6 +72,7 @@ button:focus {outline:0;}
   font-size: 20px;
   line-height: 50px;
   margin-left: 5px;
+  vertical-align: middle;
 }
 .footer span{
   display: inline;
